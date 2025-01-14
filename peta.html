@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif; /* Font Poppins */
+            background: linear-gradient(135deg, #1e90ff, #00bfff); /* Gradien Biru Laut */
+            color: #ffffff; /* Warna teks putih untuk kontras */
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #ffffff; /* Warna teks putih untuk judul */
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .about, .skills, .projects, .contact {
+            margin-bottom: 100px;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .about img:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .skills .skill {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .skills .skill .progress-bar {
+            width: 70%;
+            height: 5px;
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skills .skill .progress-bar span {
+            display: block;
+            height: 100%;
+            background: #22ff00;
+        }
+
+        .skills {
+            margin-bottom: 60px; /* Menambahkan jarak antara skills dan bagian sebelumnya */
+        }
+
+        .projects .project {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .projects .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .project .description {
+            padding: 15px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .contact form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            background: #00aaff;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background: #0047ab;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <h1 data-aos="fade-up">Hello, I'm Adira Alvian</h1>
+        <h2 data-aos="fade-up" data-aos-delay="300">Web Developer | Designer</h2>
+
+        <!-- About Section -->
+        <div class="about" data-aos="fade-up" data-aos-delay="500">
+            <img src="myphoto.jpg" alt="Your Photo">
+            <p>Hello! I'm passionate about creating beautiful and functional websites. I specialize in front-end development and UI/UX design.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills" data-aos="fade-up" data-aos-delay="700">
+            <h2>Skills</h2>
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar"><span style="width: 90%;"></span></div>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar"><span style="width: 80%;"></span></div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar"><span style="width: 70%;"></span></div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects" data-aos="fade-up" data-aos-delay="900">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="image1.png" alt="Project 1">
+                <div class="description">
+                    <h3>Project 1</h3>
+                    <p>A web app built using React and Node.js</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="image2.png" alt="Project 2">
+                <div class="description">
+                    <h3>Project 2</h3>
+                    <p>A responsive baitul mal web site built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="image3.png" alt="Project 3">
+                <div class="description">
+                    <h3>Project 3</h3>
+                    <p>A mobile-first portfolio site with smooth animations and transitions.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact" data-aos="fade-up" data-aos-delay="1100">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Adira Alvian. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // Animation duration
+            easing: 'ease-in-out', // Easing function
+            once: true, // Trigger animation once
+        });
+    </script>
+</body>
+</html>
